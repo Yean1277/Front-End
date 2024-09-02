@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_主轴方向</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: #888;
+            margin: 0 auto;
+
+            /* 伸缩盒模型相关属性-start */
+            display: flex;
+
+            /* 主轴一改，侧轴也跟着变:-
+            
+            -- 意思是如果我给row值，row就是主轴，
+            -- 如果我给column值，column就是主轴 */
+            /* 调整主轴方向
+            flex-direction: row; */
+
+            /* 调整主轴方向 right to left*/
+            flex-direction: row-reverse;
+
+            /* 调整主轴方向 top to down*/
+            /* flex-direction: column-reverse; */
+
+            /* 调整主轴方向 down to top*/
+            /* flex-direction: column-reverse; */
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+    </div>
+</body>
+</html> 
