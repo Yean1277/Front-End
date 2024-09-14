@@ -7,21 +7,11 @@
 </head>
 <body>
     <script>
-        let a = 10
-        a = true
-        a = 11n
+        let a = '123'
+        a = 'abc'
         console.log(typeof a, a)
-
-        a = a.toString() // "10"
+        a = Number(a)
         console.log(typeof a, a)
-
-        let b = 33
-        b = undefined
-        console.log(typeof b, b)
-
-        b = String(b)
-        console.log(typeof b, b)
-
     </script>
 </body>
 </html>
